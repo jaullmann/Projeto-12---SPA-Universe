@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid aqua; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;   
+    transition: 0.2s;
+  }
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;    
+
+    --logo-color: #FFFFFF;
+    --nav-selected-text-color: #FFFFFF;
+    --nav-unselected-text-color: #C4C4CC;
+    --main_tittle-color: #E1E1E6;
+    --main-text-color: #E1E1E6;
+    --main-button-text-color: #FFFFFF;
+    --main-button-text-color-hover: #02799D;
+    --main-button-bg-color-hover: #FFFFFF;
+
+    --bg-home: url(./assets/background01.png); 
+    --bg-universe: url(./assets/background02.png);
+    --bg-exploration: url(./assets/background03.png);    
+}
+  
+body {
+    font-size: 1.6rem;    
+    height: 100vh;      
+    margin: 0;
+    overflow: hidden;
+    font-weight: 700;    
+}
+
+body div {
+    height: 100%;
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
+
+body #app-home {
+    background-image: var(--bg-home);
+}
+
+body #app-universe {
+    background-image: var(--bg-universe)
+}
+
+body #app-exploration {
+    background-image: var(--bg-exploration)
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-unselected-text-color);    
+    margin-right: 5.4rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+/* Styles for nav bars in pages*/
+.home #pg-home {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
+}
+.universe #pg-universe {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
+}
+.exploration #pg-exploration {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
+}
+
+h1 {
+    color: var(--main_tittle-color);
+    font-size: 4.8rem;
+    line-height: 125%
+}
+
+#app-universe, #app-exploration p {
+    font-weight: 400;
+    color: var(--main_tittle-color);
+    font-size: 1.8rem;
+    line-height: 160%
+}
+
+p {
+    color: var(--main-text-color);
+}
+
+nav {
+    position: absolute;
+    display: flex;    
+    margin: 4rem 7.2rem;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+nav img {
+    width: 5rem;
+    margin-right: 4.3rem;
+}
+
+#app-home main {
+    display: grid;
+    place-content: center;
+    align-content: center;
+    gap: 2.4rem;
+    height: 100%;      
+}
+
+#app-universe main, #app-exploration main {
+    display: flex;
+    flex-direction: column;     
+    justify-content: top;
+
+    width: 64.8rem;
+    margin-left: 14.2rem;
+    gap: 1.6rem;
+    height: 100%;
+    padding-top: 20rem;
+}
+
+#app-home button {
+    width: 19.5rem;
+    height: 4.8rem;
+    border: 0.2rem solid var(--main-button-text-color);
+    border-radius: 0.5rem;
+    justify-self: center;
+
+    font-size: 1.4rem;
+    text-align: center;
+
+    color: var(--main-button-text-color);
+    background-color: transparent;
+}
+
+button:hover {
+    color: var(--main-button-text-color-hover);
+    background-color: var(--main-button-bg-color-hover);
+    cursor: pointer;
+}
