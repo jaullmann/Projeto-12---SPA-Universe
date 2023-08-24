@@ -39,7 +39,7 @@ body div {
     background-size: cover;
 }
 
-body #app-home {
+body #app-home, body #app-404 {
     background-image: var(--bg-home);
 }
 
@@ -57,20 +57,6 @@ a {
     margin-right: 5.4rem;
     font-size: 2.4rem;
     font-weight: 400;
-}
-
-/* Styles for nav bars in pages*/
-.home #pg-home {
-    color: var(--nav-selected-text-color);
-    font-weight: 700;
-}
-.universe #pg-universe {
-    color: var(--nav-selected-text-color);
-    font-weight: 700;
-}
-.exploration #pg-exploration {
-    color: var(--nav-selected-text-color);
-    font-weight: 700;
 }
 
 nav a:hover {
@@ -112,7 +98,7 @@ nav {
     width: 6rem;
 }
 
-#app-home main {
+#app-home main, #app-404 main {
     display: grid;
     place-content: center;
     align-content: center;
@@ -132,7 +118,7 @@ nav {
     padding-top: 30rem;
 }
 
-#app-home button {
+#app-home button, #app-404 button {
     width: 19.5rem;
     height: 4.8rem;
     border: 0.2rem solid var(--main-button-text-color);
@@ -145,10 +131,28 @@ nav {
 
     color: var(--main-button-text-color);
     background-color: transparent;
+
+    cursor: pointer;
 }
 
 button:hover {
     color: var(--main-button-text-color-hover);
     background-color: var(--main-button-bg-color-hover);
     cursor: pointer;
+}
+
+/* Styles for nav bars in pages*/
+#app-home #href-home {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
+}
+
+#app-universe #href-universe {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
+}
+
+#app-exploration #href-exploration {
+    color: var(--nav-selected-text-color);
+    font-weight: 700;
 }
