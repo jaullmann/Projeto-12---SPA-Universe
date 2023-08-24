@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid aqua; */
+    border: 1px solid aqua; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;   
     transition: 0.2s;
@@ -103,9 +103,13 @@ nav {
     align-items: center;   
 }
 
-nav img {
-    width: 5rem;
-    margin-right: 4.3rem;
+#logo {
+    display: flex;
+    align-items: center;   
+}
+
+#logo img {
+    width: 6rem;
 }
 
 #app-home main {
@@ -125,7 +129,7 @@ nav img {
     margin-left: 14.2rem;
     gap: 1.6rem;
     height: 100%;
-    padding-top: 20rem;
+    padding-top: 30rem;
 }
 
 #app-home button {
@@ -137,6 +141,7 @@ nav img {
 
     font-size: 1.4rem;
     text-align: center;
+    text-transform: uppercase;
 
     color: var(--main-button-text-color);
     background-color: transparent;

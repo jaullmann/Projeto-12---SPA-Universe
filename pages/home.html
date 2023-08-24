@@ -1,32 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Explore o Universo</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
 <body class="home">
     <div id="app-home">
-        <nav>
-            <img src="./assets/universeLogo.svg" alt="">
-            <a href="./home.html" id="pg-home">Home</a>
-            <a href="./universe.html" id="pg-universe">O Universo</a>
-            <a href="./exploration.html" id="pg-exploration">Exploração</a>
+        <nav>            
+            <a href="/" id="logo">
+                <img src="/assets/universeLogo.svg" alt="Logo de símbolo de universo">
+            </a>
+            <a href="/" id="pg-home" onclick="route()">Home</a>
+            <a href="/universe" id="pg-universe" onclick="route()">O Universo</a>
+            <a href="/exploration" id="pg-exploration" onclick="route()">Exploração</a>
         </nav>
         <main>
             <h1>
                 Explore o universo
             </h1>
-            <button>
-                QUERO SABER MAIS
+            <button data-action="/universe"> 
+                Quero saber mais
             </button>
         </main>
     </div>    
 </body>
-</html>
